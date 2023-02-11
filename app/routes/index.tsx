@@ -247,7 +247,7 @@ export default function Index() {
             View Source on{" "}
             <a
               className="text-gray-200"
-              href="https://github.com/kiliman/carbon-files"
+              href="https://github.com/kiliman/boron-files"
             >
               GitHub
             </a>

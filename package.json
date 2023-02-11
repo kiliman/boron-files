@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rimraf build public/build",
+    "build": "npm run clean && run-p build:*",
+    "build:remix": "remix build",
+    "build:css": "tailwindcss -i ./styles/tailwind.css -o ./app/styles/tailwind.css",
+    "dev": "npm run clean && run-p dev:*",
+    "dev:remix": "remix dev",
+    "dev:css": "tailwindcss -i ./styles/tailwind.css -o ./app/styles/tailwind.css -w",
+    "start": "remix-serve build",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@remix-run/node": "^1.12.0",
+    "@remix-run/react": "^1.12.0",
+    "@remix-run/serve": "^1.12.0",
+    "dom-to-image-more": "^2.15.0",
+    "isbot": "^3.6.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vscode-icons-js": "^11.6.1"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.12.0",
+    "@remix-run/eslint-config": "^1.12.0",
+    "@types/dom-to-image": "^2.6.4",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "eslint": "^8.27.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.1.2",
+    "tailwindcss": "^3.2.6",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

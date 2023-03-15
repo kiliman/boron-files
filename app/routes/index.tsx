@@ -192,8 +192,7 @@ export default function Index() {
         <div className="flex m-8 gap-8">
           <textarea
             name="files"
-            className="flex-1 p-4 text-black rounded-xl"
-            style={{ flex: "1", minHeight: "33vh", padding: "1rem" }}
+            className="flex-1 p-4 text-black rounded-xl min-h-8"
             defaultValue={files}
             onChange={doUpdate}
           />
